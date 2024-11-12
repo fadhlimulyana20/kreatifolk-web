@@ -8,7 +8,7 @@
       </router-link> -->
             <h2 class="text-2xl font-bold font-onest">Kreati<span class="text-yellow-600">folk</span></h2>
 
-            <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+            <ul class="flex flex-col md:flex-row hidden space-y-4 md:space-y-0 md:space-x-8">
                 <li v-for="(item, index) in menuItems" :key="index" class="relative group">
                     <router-link :to="item.to || ''" class="text-gray-800 font-medium hover:text-yellow-600 pb-2"
                         @click="isMobileMenuOpen = false">
