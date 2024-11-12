@@ -1,5 +1,15 @@
+<script setup>
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk}` : 'Kreatifolk';
+  }
+})
+</script>
+
 <template>
-    <div>
-        <h1 class="text-5xl font-bold underline">Hello world!</h1>
-    </div>
+  <div>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
 </template>
